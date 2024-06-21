@@ -1,0 +1,16 @@
+###
+GET http://localhost:8000/events
+
+###
+GET http://localhost:8000/events/2
+
+###
+GET http://localhost:8000/events/3/spots
+
+###
+POST http://localhost:8000/events/2/reserve
+Content-Type: application/json
+
+{
+  "spots": ["B2"]
+}
